@@ -21,8 +21,8 @@ local function countchar(s,c)
 end
 
 local function valid_position (pos1, pos2, char, password)
-  return logic.xor( string.sub(password, pos1, pos1) == char,
-    string.sub(password, pos2, pos2) == char)
+  return (string.sub(password, pos1, pos1) == char) ~=
+    (string.sub(password, pos2, pos2) == char)
 end
 
 function solution1 ()
