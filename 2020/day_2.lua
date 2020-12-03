@@ -1,9 +1,7 @@
 
 local files = require 'utils.files'
 local strings = require 'utils.strings'
-local logic = require 'utils.logic'
 local data = files.fileToArray('day_2_input.txt', tostring)
---local data = {"1-3 a: abcd", "1-3 b: cdefg", "2-9 c: ccccccccc", "3-6 j: jjjjjrrj"};
 
 local function split(row)
   local elements = strings.split(row, " ")
